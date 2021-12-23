@@ -223,11 +223,11 @@ def addCommonOptions(parser):
     # Out-of-Order CPU wrapper for cs425 -- pa2
     parser.add_argument("--LSQ_Entries", type=int, default=8)
     parser.add_argument("--numPhys_Regs", type=int, default=256)
-    parser.add_argument("--numROB_Entries", type=int, default=256)
+    parser.add_argument("--numROB_Entries", type=int, default=16)
 
     parser.add_argument("--int_latency", type=int, default=2)
     parser.add_argument("--int_pipelined", type=int, default=1)
-    parser.add_argument("--num_int_FUs", type=int, default=6)
+    parser.add_argument("--num_int_FUs", type=int, default=2)
 
     parser.add_argument("--mult_latency", type=int, default=3)
     parser.add_argument("--mult_pipelined", type=int, default=1)
@@ -237,7 +237,7 @@ def addCommonOptions(parser):
 
     parser.add_argument("--read_latency", type=int, default=4)
     parser.add_argument("--float_read_latency", type=int, default=5)
-    parser.add_argument("--num_ls_FUs", type=int, default=3)
+    parser.add_argument("--num_ls_FUs", type=int, default=1)
 
     parser.add_argument("--write_latency", type=int, default=4)
     parser.add_argument("--float_write_latency", type=int, default=5)
